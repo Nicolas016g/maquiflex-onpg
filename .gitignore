@@ -37,3 +37,6 @@ next-env.d.ts
 
 # extracted assets (source zips)
 /_extract/
+
+# videos served via GitHub Releases in production
+/public/videos/

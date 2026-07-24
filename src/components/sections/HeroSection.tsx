@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ChevronDown, MapPin } from "lucide-react";
 import { siteConfig } from "@/lib/site";
+import { mediaUrl } from "@/lib/media";
 import { MaquiflexLogo } from "../ui/MaquiflexLogo";
 
 export function HeroSection() {
@@ -18,7 +19,7 @@ export function HeroSection() {
           className="h-full w-full object-cover"
           aria-hidden
         >
-          <source src="/videos/recepcao.mp4" type="video/mp4" />
+          <source src={mediaUrl("/videos/recepcao.mp4")} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50" />

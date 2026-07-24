@@ -1,3 +1,4 @@
+import { mediaUrl } from "@/lib/media";
 import { ScrollReveal } from "../ui/ScrollReveal";
 import { SectionHeader } from "../ui/SectionHeader";
 import { VideoPlayer } from "../ui/VideoPlayer";
@@ -6,17 +7,17 @@ const pillars = [
   {
     title: "Desbobinadora",
     desc: "Alimentação controlada do filme flexível na linha de produção.",
-    video: "/videos/desbobinadora.mp4",
+    video: mediaUrl("/videos/desbobinadora.mp4"),
   },
   {
     title: "Bancada de Formação",
     desc: "Formação precisa do pouch com engenharia de detalhe.",
-    video: "/videos/formacao.mp4",
+    video: mediaUrl("/videos/formacao.mp4"),
   },
   {
     title: "Linha Completa",
     desc: "Integração das estações em uma solução horizontal completa.",
-    video: "/videos/cena-360.mp4",
+    video: mediaUrl("/videos/cena-360.mp4"),
   },
 ];
 
