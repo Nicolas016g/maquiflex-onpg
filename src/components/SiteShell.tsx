@@ -3,7 +3,7 @@ import { Footer } from "./layout/Footer";
 import { Header } from "./layout/Header";
 import { AboutSection } from "./sections/AboutSection";
 import { EngineeringSection } from "./sections/EngineeringSection";
-import { GallerySection } from "./sections/GallerySection";
+import { ExpansionSection } from "./sections/ExpansionSection";
 import { HeroSection } from "./sections/HeroSection";
 import { StatsBar } from "./sections/StatsBar";
 import { TechnologySection } from "./sections/TechnologySection";
@@ -17,12 +17,12 @@ export function SiteShell() {
       <main>
         <HeroSection />
         <StatsBar />
+        <ExpansionSection />
         <AboutSection />
         <TechnologySection />
         <VideoShowcaseSection />
         <EngineeringSection />
         <WhySection />
-        <GallerySection />
       </main>
       <Footer />
       <BackToTop />

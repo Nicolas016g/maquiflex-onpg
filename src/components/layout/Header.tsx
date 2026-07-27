@@ -7,11 +7,11 @@ import { MaquiflexLogo } from "../ui/MaquiflexLogo";
 const navLinks = [
   { label: "Início", href: "#inicio" },
   { label: "Empresa", href: "#empresa" },
+  { label: "Expansão", href: "#expansao" },
   { label: "Tecnologia", href: "#tecnologia" },
   { label: "Vídeos", href: "#videos" },
   { label: "Engenharia", href: "#engenharia" },
   { label: "Diferenciais", href: "#diferenciais" },
-  { label: "Galeria", href: "#galeria" },
 ];
 
 export function Header() {

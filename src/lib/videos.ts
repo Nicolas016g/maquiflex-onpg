@@ -41,7 +41,6 @@ const videos = [
     title: "Expansão Industrial — Visão Completa",
     description: "Panorama da capacidade produtiva e das áreas de desenvolvimento.",
     category: "institucional" as const,
-    featured: true,
   },
   {
     id: "cena-360",

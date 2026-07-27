@@ -2,29 +2,24 @@
 
 import { motion } from "framer-motion";
 import { ChevronDown, MapPin } from "lucide-react";
+import Image from "next/image";
 import { siteConfig } from "@/lib/site";
-import { mediaUrl } from "@/lib/media";
 import { MaquiflexLogo } from "../ui/MaquiflexLogo";
 
 export function HeroSection() {
   return (
     <section id="inicio" className="relative min-h-[100svh] overflow-hidden bg-black">
-      <div className="absolute inset-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="h-full w-full object-cover"
-          aria-hidden
-        >
-          <source src={mediaUrl("/videos/recepcao.mp4")} type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50" />
-      </div>
-
+      <Image
+        src="/images/hero/linha-maquina.jpg"
+        alt=""
+        fill
+        priority
+        className="object-cover object-center"
+        sizes="100vw"
+        aria-hidden
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-black/45" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50" />
       <div className="pointer-events-none absolute inset-0 pattern-grid opacity-30" />
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center px-4 pb-24 pt-28 md:px-6 md:pb-28 md:pt-32">
