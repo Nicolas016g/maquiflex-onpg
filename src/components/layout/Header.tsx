@@ -6,10 +6,11 @@ import { MaquiflexLogo } from "../ui/MaquiflexLogo";
 
 const navLinks = [
   { label: "Início", href: "#inicio" },
+  { label: "Infraestrutura", href: "#infraestrutura" },
   { label: "Empresa", href: "#empresa" },
-  { label: "Expansão", href: "#expansao" },
-  { label: "Tecnologia", href: "#tecnologia" },
   { label: "Vídeos", href: "#videos" },
+  { label: "Eventos", href: "#eventos" },
+  { label: "Tecnologia", href: "#tecnologia" },
   { label: "Engenharia", href: "#engenharia" },
   { label: "Diferenciais", href: "#diferenciais" },
 ];

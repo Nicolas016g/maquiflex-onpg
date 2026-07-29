@@ -35,12 +35,12 @@ export function ExpansionSection() {
   const videoSrc = mediaUrl("/videos/expansao-v2.mp4");
 
   return (
-    <section id="expansao" className="section-padding bg-surface-alt">
+    <section id="infraestrutura" className="section-padding bg-surface-alt">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <ScrollReveal>
           <SectionHeader
             eyebrow="Infraestrutura"
-            title="Expansão industrial Maquiflex"
+            title="Infraestrutura industrial Maquiflex"
             subtitle="Uma estrutura em constante evolução para atender com excelência o mercado de embalagens flexíveis."
           />
         </ScrollReveal>
@@ -51,7 +51,7 @@ export function ExpansionSection() {
               <p>
                 A Maquiflex investe continuamente em sua infraestrutura industrial em Monte Alto,
                 interior de São Paulo. Nossa planta foi concebida para integrar engenharia, montagem,
-                testes e validação em um único ambiente produtivo — garantindo agilidade e controle em
+                testes e validação em um único ambiente produtivo, garantindo agilidade e controle em
                 cada etapa do desenvolvimento das máquinas.
               </p>
               <p>
@@ -75,7 +75,7 @@ export function ExpansionSection() {
           <ScrollReveal delay={0.1}>
             <VideoPlayer
               src={videoSrc}
-              title="Expansão Industrial — Visão Completa"
+              title="Infraestrutura — Visão Completa"
               aspect="cinematic"
             />
           </ScrollReveal>

@@ -46,7 +46,7 @@ export function HeroSection() {
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75 md:text-xl">
             Empresa especializada no desenvolvimento e fabricação de máquinas envasadoras
-            horizontais — com engenharia própria em todas as etapas.
+            horizontais com engenharia própria em todas as etapas.
           </p>
 
           <p className="mt-5 border-l-2 border-chrome/40 pl-4 text-sm italic text-chrome/80">

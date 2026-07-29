@@ -18,7 +18,7 @@ const capabilities = [
   {
     icon: Cpu,
     title: "Automação e Integração Elétrica",
-    desc: "CLP, IHM, servossistemas, diagramas elétricos e lógica de máquina.",
+    desc: "CLP, IHM, sistema Servo, diagramas elétricos e lógica de máquina.",
   },
   {
     icon: FlaskConical,

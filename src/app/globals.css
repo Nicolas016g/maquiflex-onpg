@@ -95,3 +95,43 @@ body {
 .metallic-border {
   border-image: linear-gradient(135deg, #e8e8e8, #888, #d0d0d0) 1;
 }
+
+.infra-stats-gradient {
+  background: linear-gradient(
+    90deg,
+    #202847 0%,
+    #1499c6 25%,
+    #18a0dc 50%,
+    #5aba99 75%,
+    #4b7766 100%
+  );
+}
+
+.brand-gradient-border {
+  padding: 1px;
+  border-radius: 0.125rem;
+  background: linear-gradient(
+    135deg,
+    #202847 0%,
+    #1499c6 22%,
+    #18a0dc 45%,
+    #5aba99 72%,
+    #4b7766 100%
+  );
+}
+
+.brand-gradient-border--hover {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.brand-gradient-border--hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+.brand-gradient-border__inner {
+  border-radius: calc(0.125rem - 1px);
+  height: 100%;
+}

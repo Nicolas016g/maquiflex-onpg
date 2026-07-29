@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { ScrollReveal } from "../ui/ScrollReveal";
 import { SectionHeader } from "../ui/SectionHeader";
+import { GradientFrame } from "../ui/GradientFrame";
 
 const differentiators = [
   { icon: Cog, title: "Engenharia própria", desc: "Desenvolvimento completo em todas as etapas do projeto." },
@@ -43,21 +44,23 @@ export function WhySection() {
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {differentiators.map((item, i) => (
             <ScrollReveal key={item.title} delay={i * 0.05}>
-              <div className="card card-hover h-full p-5">
-                <item.icon className="h-6 w-6 text-chrome" strokeWidth={1.5} />
-                <h3 className="mt-3 font-bold text-white">{item.title}</h3>
-                <p className="mt-2 text-sm text-text-muted">{item.desc}</p>
-              </div>
+              <GradientFrame className="h-full" hover>
+                <div className="h-full bg-surface-alt p-5 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+                  <item.icon className="h-6 w-6 text-chrome" strokeWidth={1.5} />
+                  <h3 className="mt-3 font-bold text-white">{item.title}</h3>
+                  <p className="mt-2 text-sm text-text-muted">{item.desc}</p>
+                </div>
+              </GradientFrame>
             </ScrollReveal>
           ))}
         </div>
 
         <ScrollReveal delay={0.15}>
-          <div className="mt-16 grid divide-y divide-chrome/10 rounded-sm border border-chrome/15 bg-black md:grid-cols-3 md:divide-x md:divide-y-0">
+          <div className="infra-stats-gradient mt-16 grid divide-y divide-white/15 rounded-sm border border-chrome/15 md:grid-cols-3 md:divide-x md:divide-y-0">
             {infrastructure.map((item) => (
               <div key={item.label} className="px-8 py-10 text-center">
-                <p className="text-3xl font-black text-chrome-gradient">{item.value}</p>
-                <p className="mt-2 text-sm text-text-muted">{item.label}</p>
+                <p className="text-3xl font-black text-white">{item.value}</p>
+                <p className="mt-2 text-sm text-white/85">{item.label}</p>
               </div>
             ))}
           </div>
