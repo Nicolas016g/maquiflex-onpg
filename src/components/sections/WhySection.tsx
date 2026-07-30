@@ -64,9 +64,6 @@ export function WhySection() {
               </div>
             ))}
           </div>
-          <p className="mt-6 text-center text-sm text-text-muted">
-            Showroom · Pouch Lab · Almoxarifado estratégico · Área de testes e validação
-          </p>
         </ScrollReveal>
       </div>
     </section>
