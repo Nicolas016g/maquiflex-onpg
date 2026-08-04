@@ -37,7 +37,7 @@ export function TechnologySection() {
           {pillars.map((item, i) => (
             <ScrollReveal key={item.title} delay={i * 0.08}>
               <div>
-                <VideoPlayer src={item.video} title={item.title} />
+                <VideoPlayer src={item.video} title={item.title} allowAudio={false} />
                 <h3 className="mt-4 font-bold text-white">{item.title}</h3>
                 <p className="mt-2 text-sm text-text-muted">{item.desc}</p>
               </div>

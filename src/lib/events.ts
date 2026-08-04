@@ -7,14 +7,8 @@ export interface EventPhoto {
 export const fispal2026 = {
   title: "Fispal 2026",
   subtitle:
-    "Presença da Maquiflex na maior feira de alimentos e bebidas da América Latina — apresentando tecnologia nacional, demonstrações ao vivo e relacionamento com o mercado.",
-  montage: {
-    file: "fispal-montagem.mp4",
-    title: "Fispal 2026 — Destaques",
-    description:
-      "Registro em vídeo com momentos do estande, demonstrações e interação com visitantes no evento.",
-    poster: "/images/fispal/IMG_20260617_131155.jpg",
-  },
+    "Presença da Maquiflex na maior feira de alimentos e bebidas da América Latina.",
+  highlightsLabel: "Destaques",
   photos: [
     {
       src: "/images/fispal/IMG_20260617_131155.jpg",

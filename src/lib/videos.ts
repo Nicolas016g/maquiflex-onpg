@@ -1,6 +1,6 @@
 import { mediaUrl } from "./media";
 
-export type VideoCategory = "institucional" | "tecnologia";
+export type VideoCategory = "institucional";
 
 export interface SiteVideo {
   id: string;
@@ -10,11 +10,13 @@ export interface SiteVideo {
   description: string;
   category: VideoCategory;
   featured?: boolean;
+  poster?: string;
+  playbackRate?: number;
+  preload?: "none" | "metadata" | "auto";
 }
 
 export const videoCategories: Record<VideoCategory, string> = {
   institucional: "Institucional",
-  tecnologia: "Tecnologia & Engenharia",
 };
 
 const videos = [
@@ -25,37 +27,9 @@ const videos = [
     description: "Visão geral da empresa, sua estrutura e compromisso com a indústria nacional.",
     category: "institucional" as const,
     featured: true,
-  },
-  {
-    id: "expansao-v2",
-    file: "expansao-v2.mp4",
-    title: "Infraestrutura Industrial — Visão Completa",
-    description: "Panorama da capacidade produtiva e das áreas de desenvolvimento em Monte Alto.",
-    category: "institucional" as const,
-    featured: true,
-  },
-  {
-    id: "cena-360",
-    file: "cena-360.mp4",
-    title: "Linha Completa — Cena 360°",
-    description: "Visualização tridimensional da linha de envase horizontal.",
-    category: "tecnologia" as const,
-    featured: true,
-  },
-  {
-    id: "desbobinadora",
-    file: "desbobinadora.mp4",
-    title: "Bancada Desbobinadora",
-    description: "Estação de alimentação do filme flexível na linha de produção.",
-    category: "tecnologia" as const,
-  },
-  {
-    id: "formacao",
-    file: "formacao.mp4",
-    title: "Bancada de Formação",
-    description: "Formação precisa do pouch com engenharia de detalhe.",
-    category: "tecnologia" as const,
-    featured: true,
+    poster: "/images/posters/recepcao.jpg",
+    playbackRate: 2,
+    preload: "auto" as const,
   },
 ];
 
@@ -71,6 +45,9 @@ export const siteVideos: SiteVideo[] = videos.map((v) => ({
   description: v.description,
   category: v.category,
   featured: v.featured,
+  poster: v.poster,
+  playbackRate: v.playbackRate,
+  preload: v.preload,
 }));
 
 export function videosByCategory(category: VideoCategory) {

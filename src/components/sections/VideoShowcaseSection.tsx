@@ -10,7 +10,7 @@ import {
   type VideoCategory,
 } from "@/lib/videos";
 
-const categoryOrder: VideoCategory[] = ["institucional", "tecnologia"];
+const categoryOrder: VideoCategory[] = ["institucional"];
 
 export function VideoShowcaseSection() {
   return (
@@ -20,7 +20,7 @@ export function VideoShowcaseSection() {
           <SectionHeader
             eyebrow="Conheça a Maquiflex"
             title="Nossa história em vídeo"
-            subtitle="Registros institucionais e da engenharia — uma visão de quem somos e como trabalhamos."
+            subtitle="Registros institucionais, uma visão de quem somos e como trabalhamos."
           />
         </ScrollReveal>
 
@@ -46,21 +46,22 @@ export function VideoShowcaseSection() {
                     : "sm:grid-cols-2 lg:grid-cols-3"
                 }`}
               >
-                {videos.map((video, i) => (
-                  <ScrollReveal key={video.id} delay={i * 0.04}>
-                    <div className={category === "institucional" && i === 0 ? "lg:col-span-3" : ""}>
-                      <VideoPlayer
-                        src={getVideoSrc(video.file)}
-                        title={video.title}
-                        aspect={category === "institucional" && i === 0 ? "cinematic" : "video"}
-                        showRemainingCountdown={video.id === "recepcao"}
-                      />
-                      <p className="mt-3 text-sm font-semibold text-white">{video.title}</p>
-                      <p className="mt-1 text-xs leading-relaxed text-text-muted">
-                        {video.description}
-                      </p>
-                    </div>
-                  </ScrollReveal>
+                {videos.map((video) => (
+                  <div key={video.id} className="lg:col-span-3">
+                    <VideoPlayer
+                      src={getVideoSrc(video.file)}
+                      title={video.title}
+                      poster={video.poster}
+                      aspect="cinematic"
+                      playbackRate={video.playbackRate ?? 1}
+                      preload={video.preload}
+                      showRemainingCountdown={video.id === "recepcao"}
+                    />
+                    <p className="mt-3 text-sm font-semibold text-white">{video.title}</p>
+                    <p className="mt-1 text-xs leading-relaxed text-text-muted">
+                      {video.description}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>

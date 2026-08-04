@@ -77,6 +77,7 @@ export function ExpansionSection() {
               src={videoSrc}
               title="Infraestrutura — Visão Completa"
               aspect="cinematic"
+              allowAudio={false}
             />
           </ScrollReveal>
         </div>
