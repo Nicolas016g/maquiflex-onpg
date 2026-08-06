@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Maquiflex",
   tagline: "Tecnologia, Experiência e Compromisso",
   description:
-    "Conheça a Maquiflex — fabricante brasileira de máquinas envasadoras horizontais para embalagens flexíveis. Engenharia própria, estrutura nacional.",
+    "Conheça a Maquiflex — fabricante brasileira de máquinas embaladoras e envasadoras horizontais para embalagens flexíveis. Engenharia própria, estrutura nacional.",
   address: "Av. Wilson Folador, 2421",
   city: "Monte Alto",
   state: "SP",

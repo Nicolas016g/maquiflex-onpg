@@ -9,10 +9,11 @@ import { GradientFrame } from "./GradientFrame";
 
 interface EventHighlightsCarouselProps {
   label: string;
+  caption: string;
   photos: EventPhoto[];
 }
 
-export function EventHighlightsCarousel({ label, photos }: EventHighlightsCarouselProps) {
+export function EventHighlightsCarousel({ label, caption, photos }: EventHighlightsCarouselProps) {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const total = photos.length;
@@ -96,7 +97,7 @@ export function EventHighlightsCarousel({ label, photos }: EventHighlightsCarous
           </div>
 
           <div className="flex items-end justify-between gap-4 border-t border-chrome/10 bg-surface-alt px-5 py-4 md:px-6">
-            <p className="text-sm leading-relaxed text-text-muted">{current.caption}</p>
+            <p className="text-sm leading-relaxed text-text-muted">{caption}</p>
             <p className="shrink-0 text-xs font-semibold tabular-nums text-chrome/80">
               {index + 1} / {total}
             </p>

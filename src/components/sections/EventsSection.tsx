@@ -18,7 +18,11 @@ export function EventsSection() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.08}>
-          <EventHighlightsCarousel label={fispal2026.highlightsLabel} photos={fispal2026.photos} />
+          <EventHighlightsCarousel
+            label={fispal2026.highlightsLabel}
+            caption={fispal2026.highlightsCaption}
+            photos={fispal2026.photos}
+          />
         </ScrollReveal>
       </div>
     </section>

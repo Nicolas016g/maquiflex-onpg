@@ -23,7 +23,7 @@ const capabilities = [
   {
     icon: FlaskConical,
     title: "Engenharia de Aplicação",
-    desc: "Formatos de pouch, testes de envase e requisitos do cliente.",
+    desc: "Formatos de pouch, testes de envase e embalagem.",
   },
   {
     icon: Wrench,

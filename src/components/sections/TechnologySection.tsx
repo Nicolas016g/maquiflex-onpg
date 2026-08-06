@@ -29,7 +29,7 @@ export function TechnologySection() {
           <SectionHeader
             eyebrow="Tecnologia"
             title="Engenharia aplicada à indústria"
-            subtitle="Desenvolvimento próprio de máquinas envasadoras horizontais, do conceito à entrega, com foco em robustez, confiabilidade e adaptação à realidade brasileira."
+            subtitle="Desenvolvimento próprio de máquinas embaladoras e envasadoras horizontais, do conceito à entrega, com foco em robustez, confiabilidade e adaptação à realidade brasileira."
           />
         </ScrollReveal>
 

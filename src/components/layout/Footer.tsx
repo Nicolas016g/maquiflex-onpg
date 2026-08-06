@@ -13,7 +13,7 @@ export function Footer() {
               <div>
                 <MaquiflexLogo variant="footer" />
                 <p className="mt-5 text-sm leading-relaxed text-text-muted">
-                  {siteConfig.tagline}. Fabricante brasileira de máquinas envasadoras horizontais
+                  {siteConfig.tagline}. Fabricante brasileira de máquinas embaladoras e envasadoras horizontais
                   com engenharia própria e estrutura nacional.
                 </p>
               </div>
