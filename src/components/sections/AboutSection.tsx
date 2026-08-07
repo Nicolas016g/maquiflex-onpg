@@ -19,7 +19,7 @@ export function AboutSection() {
             <div className="space-y-5 text-text-muted leading-relaxed">
               <p>
                 A Maquiflex nasceu da experiência prática de profissionais que atuaram por décadas ao
-                lado dos principais fabricantes mundiais de máquinas HFFS HFS. Trajetórias sólidas e
+                lado dos principais fabricantes mundiais de máquinas HFFS e HFS. Trajetórias sólidas e
                 complementares com mais de 46 anos de experiência acumulada transformadas em
                 soluções robustas e confiáveis para a indústria brasileira.
               </p>

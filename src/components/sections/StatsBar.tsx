@@ -4,7 +4,7 @@ const stats = [
   { value: "+46", label: "Anos de experiência acumulada" },
   { value: "+150", label: "Máquinas vendidas" },
   { value: "+100", label: "Máquinas instaladas" },
-  { value: "100%", label: "Plataforma nacional de envase" },
+  { value: "100%", label: "Plataforma nacional de envase e embalagem" },
 ];
 
 export function StatsBar() {
